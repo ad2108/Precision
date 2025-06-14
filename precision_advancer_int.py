@@ -5,6 +5,16 @@
 # --------------------------------------------------
 
 # --------------------------------------------------
+# Author: ad2108
+# Version: 1.0
+# Date: 2025-06-15
+# License: MIT
+# 
+# Description:
+#   Functions to work with floats as integers and boost precision
+# --------------------------------------------------
+
+# --------------------------------------------------
 # Convert float to integer through string manipulations
 # Return a tuple with 2 integers that represent the float
 # Example: 1.23 -> (123, -2)
