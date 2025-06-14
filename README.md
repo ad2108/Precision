@@ -66,7 +66,7 @@ This functions can add up numbers in the tuple notation.
 pai.add((12, -3), (13, -2)) # returns (142, -3)
 ```
 
-#### sub, mut, div
+#### sub, mul, div
 
 The functions sub, mul and div work like the add function. The function sub subtracts all following numbers from the first number and the function div divides the first number by all following numbers.
 
