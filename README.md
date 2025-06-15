@@ -37,7 +37,7 @@ This function converts the tuple notation back to a float
 
 ```python
 # convert (12, -1) to 1.2
-pai.from_int(1.2)
+pai.from_int((12, -1))
 ``` 
 
 #### dec_to_int
