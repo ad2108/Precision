@@ -4,7 +4,7 @@
 
 ### Concept
 
-To get a better precision in calculations it is possible to use integers instead of floats. Higher precision is achieved, because integers in python 3 are only limited by available memory. Floats on the other end are limited in python to 64-bit. Using integers instead of floats therefore yields more precise results.
+To get a better precision in calculations it is possible to use integers instead of floats. Higher precision is achieved, because integers in python 3 are only limited by available memory. Floats on the other hand are limited in python to 64-bit numbers. Using integers instead of floats therefore yields more precise results.
 
 To convert a number from float to a integer, without losses the float is multiplied with $10^{factor}$ and the factor passed with the resulting integer. The resulting pattern is:
 
