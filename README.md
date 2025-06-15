@@ -26,7 +26,7 @@ import precision_advancer_int as pai
 
 #### to_int
 
-This function converts a number to a tuple that contains $n_{int}$ and $fac_{int}$. For input eather floats (Attention!!! Numbers limited to 64-bit) or as strings.
+This function converts a number to a tuple that contains $n_{int}$ and $fac_{int}$. For input floats (Attention!!! Numbers limited to 64-bit) or strings can be used.
 
 ```python
 # convert 1.2 to (12, -1)
