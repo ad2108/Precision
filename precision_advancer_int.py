@@ -25,8 +25,10 @@ def to_int(x: float or str):
     # without conversion
     if type(x) == str:
       spl = x.split('.') if '.' in x else None
-    else:
+    elif type(x) == float:
       spl = str(x).split('.') if '.' in str(x) else None
+    else:
+      raise TypeError('Only float or string supported')
       
 
     # The factor * -1 equals the length of the values after the .
