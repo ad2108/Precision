@@ -26,11 +26,14 @@ import precision_advancer_int as pai
 
 #### to_int
 
-This function convert a number to a tuple that contains $n_{int}$ and $fac_{int}$. 
+This function converts a number to a tuple that contains $n_{int}$ and $fac_{int}$. For input eather floats (Attention!!! Numbers limited to 64-bit) or as strings.
 
 ```python
 # convert 1.2 to (12, -1)
 pai.to_int(1.2)
+
+# convert 1000000.000002 to (1000000000002, -6)
+pai.to_int('1000000.000002')
 ``` 
 
 #### from_int
