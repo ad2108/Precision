@@ -11,7 +11,7 @@
 # License: MIT
 # 
 # Description:
-#   Makefile to test all tests in this directory
+#		Makefile to test all tests in this directory
 # --------------------------------------------------
 
 # --------------------------------------------------
@@ -24,6 +24,7 @@ TESTS = $(wildcard *_test.py)
 # --------------------------------------------------
 all: $(TESTS)
 	$(COMP) $(C-FLAGS) $^
+	rm -r __pycache__/
 
 # --------------------------------------------------
 clean:
