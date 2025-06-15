@@ -22,9 +22,14 @@ import precision_advancer_int as pai
 class TestPrecision(unittest.TestCase):
 
 # --------------------------------------------------
-  def test_to_int(self):
+  def test_to_int1(self):
     expected = (123, -2)
     actual = pai.to_int(1.23)
+    self.assertEqual(expected, actual)
+
+  def test_to_int2(self):
+    expected = (123, -2)
+    actual = pai.to_int('1.23')
     self.assertEqual(expected, actual)
 
 # --------------------------------------------------

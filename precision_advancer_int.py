@@ -18,16 +18,22 @@
 # Convert float to integer through string manipulations
 # Return a tuple with 2 integers that represent the float
 # Example: 1.23 -> (123, -2)
-def to_int(x: float):
+def to_int(x: float or str):
 
     # Extract values after the dot for the factor
-    rest = str(x).split('.')[1] if '.' in str(x) else None
+    # If string use direct string manipulations
+    # without conversion
+    if type(x) == str:
+      spl = x.split('.') if '.' in x else None
+    else:
+      spl = str(x).split('.') if '.' in str(x) else None
+      
 
     # The factor * -1 equals the length of the values after the .
-    length = int(len(rest)) if rest!=None else 0
+    length = int(len(spl[1])) if spl[1]!=None else 0
 
     # return a tuple with the float times 10^{-factor} and the factor
-    return (int(x*10**length), -length) #return (int, int)
+    return (int(str(spl[0]) + str(spl[1])), -length) #return (int, int)
 
 # --------------------------------------------------
 # Convert the number back from the tuple
