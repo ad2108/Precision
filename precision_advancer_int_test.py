@@ -28,9 +28,14 @@ class TestPrecision(unittest.TestCase):
     self.assertEqual(expected, actual)
 
 # --------------------------------------------------
-  def test_from_int(self):
+  def test_from_int1(self):
     expected = 12.34
     actual = pai.from_int((1234, -2))
+    self.assertEqual(expected, actual)
+
+  def test_from_int2(self):
+    expected = 0.004
+    actual = pai.from_int((4, -3))
     self.assertEqual(expected, actual)
 
 # --------------------------------------------------
