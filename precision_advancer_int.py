@@ -49,6 +49,13 @@ def from_int(tup):
     # The first result is the number \cdot 10^{factor}
     res1 = float(numb*10**fac)
 
+    # If the number is negative a boolean value is set to True
+    # And get rid of the negative number
+    is_negative = False
+    if numb <= 0:
+      is_negative = True
+      numb = abs(numb)
+
     # If the factor is smaller than the number res2 can be
     # created directly ((12, -1) -> 1.2)
     if abs(fac) <= len(str(numb)):
@@ -63,7 +70,13 @@ def from_int(tup):
 
     # To get rid of any calculation errors the difference
     # between res1 and res2 is added to to res1
-    return res1+(res2-res1) if  res2-res1 != 0 else res1
+    res = res1+(res2-res1) if  res2-res1 != 0 else res1
+
+    # If number was negative return negative number
+    if is_negative == True:
+      return -res
+    else:
+      return res
 
 # --------------------------------------------------
 # Decorator to return the result of a function in (numb, fac) notation

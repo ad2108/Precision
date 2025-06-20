@@ -43,6 +43,11 @@ class TestPrecision(unittest.TestCase):
     actual = pai.from_int((4, -3))
     self.assertEqual(expected, actual)
 
+  def test_from_int3(self):
+    expected = -0.004
+    actual = pai.from_int((-4, -3))
+    self.assertEqual(expected, actual)
+
 # --------------------------------------------------
   def test_dec_to_int(self):
     @pai.dec_to_int
