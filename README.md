@@ -10,9 +10,9 @@ To convert a number from float to a integer, without losses the float is multipl
 
 $$n_{float} = (n_{int}, fac_{int})$$
 
-In this function $n_{int}$ equals to $n_{float} \cdot 10^{fac_{int}}$. To retrieve the float from the integer and factor the following formula can be applied:
+In this function $n_{int}$ equals to $n_{float} \cdot 10^{-fac_{int}}$. To retrieve the float from the integer and factor the following formula can be applied:
 
-$$n_{float} = n_{int} \cdot 10^{-fac_{int}}$$
+$$n_{float} = n_{int} \cdot 10^{fac_{int}}$$
 
 ### Implemented functions
 
