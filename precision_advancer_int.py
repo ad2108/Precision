@@ -25,7 +25,7 @@ def to_int(x: float or str):
     # without conversion
     if type(x) == str:
       spl = x.split('.') if '.' in x else None
-    elif type(x) == float or type(x) == int:
+    elif type(x) == float:
       spl = str(x).split('.') if '.' in str(x) else None
     else:
       raise TypeError('Only float or string supported')
