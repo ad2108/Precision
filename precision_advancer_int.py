@@ -68,7 +68,7 @@ def from_int(tup):
         str_numb = diff*'0' + str(numb)
         res = float(str_numb[0:fac] + '.' + str_numb[fac:])
 
-    # Return a the result
+    # Return the result
     return res if is_negative == False else -res
 
 # --------------------------------------------------
@@ -115,7 +115,7 @@ def dec_from_int(func):
 # The factor is in most cases negative therefore the smallest is the important
 def __sm_factor__(lst: list):
 
-    # small is initialised with factor 0
+    # small is initialized with factor 0
     small = 0
 
     # Enumeration through the list of values
@@ -134,7 +134,7 @@ def __sm_factor__(lst: list):
 # (numb, fac) notation
 def __refactor__(lst):
 
-    # Find the smallest factor and create the resultlist
+    # Find the smallest factor and create the result list
     sm_fac = __sm_factor__(lst)
     new_lst = []
 
